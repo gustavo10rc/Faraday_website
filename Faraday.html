@@ -2,9 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="Faraday.css"> 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+    
+    
     <title>Faraday</title>
 </head>
 <body>
@@ -40,15 +47,15 @@
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Inventore quod, et quae nemo neque id dolorem eligendi officia nam
                      dolorum ducimus soluta omnis? Ex blanditiis possimus reiciendis laboriosam nam nemo.</p>
-                  <img class="image" src="money.png" alt="money" />
+                  <img class="image" src="img/missao.png" alt="missao" />
                 </div>
            
                 <div class="card blue">
-                  <h2>Visao</h2>
+                  <h2>Visão</h2>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Inventore quod, et quae nemo neque id dolorem eligendi officia nam
                      dolorum ducimus soluta omnis? Ex blanditiis possimus reiciendis laboriosam nam nemo.</p>
-                  <img class="image" src="settings.png" alt="settings" />
+                  <img class="image" src="img/visao.png" alt="visao" />
                 </div>
            
                 <div class="card red">
@@ -56,21 +63,68 @@
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                       Inventore quod, et quae nemo neque id dolorem eligendi officia nam
                        dolorum ducimus soluta omnis? Ex blanditiis possimus reiciendis laboriosam nam nemo.</p>
-                  <img class="image" src="article.png" alt="article" />
+                  <img class="image" src="img/valor.png" alt="valores" />
                 </div>
             </div>
         </section>
 
         <section id="produto" class="conteinerProduto">
-            <div>
-                testo
+           <!--<h1>Nossos serviços</h1>--> 
+            <div class="painelsolar">
+                <img src="img/painel-sol.jpg" class="imagesolar">
+            </div>
+
+            <div class="">
+                <img src="img/eolica.jpg" class="imageeolica">
             </div>
         </section>
 
         <section id="contato" class="conteinerContato">
-            <div>
-                testo
+            
+            <img src="img/energia-eolica.jpeg" class="contatopage">
+            <div class="formulario">
+                <h1>Entre em contato conosco</h1>  
+                <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+                    <input type=hidden name="oid" value="00D8a000001kz5r">
+                    <input type=hidden name="retURL" value="http://teste.com">
+                    
+                    <!--  ----------------------------------------------------------------------  -->
+                    <!--  NOTA: Estes campos são elementos de depuração opcionais. Remova o       -->
+                    <!--  comentário dessas linhas se quiser testar no modo de depuração.         -->
+                    <!--  <input type="hidden" name="debug" value=1>                              -->
+                    <!--  <input type="hidden" name="debugEmail"                                  -->
+                    <!--  value="gleisertarine@gmail.com">                                        -->
+                    <!--  ----------------------------------------------------------------------  -->
+                    
+                    <label for="first_name" class="labell">Primeiro Nome</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" class="form-control"/><br>
+                    
+                    <label for="last_name" class="labell">Sobrenome</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" class="form-control"/><br>
+                    
+                    <label for="email" class="labell">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" class="form-control" /><br>
+                    
+                    <label for="Tipo de Energia" class="labell">Tipo de Energia:</label><select  id="00N8a000007H4yK" name="00N8a000007H4yK" title="Tipo de Energia" class="form-control"><option value="">-- Nenhum --</option><option value="Eólica">Eólica</option>
+                    <option value="Solar">Solar</option>
+                    </select><br>
+                    
+                    <label for="00N8a000007H5gM" class="labell">Região do Brasil:</label><select  id="00N8a000007H5gM" name="00N8a000007H5gM" title="Região do Brasil" class="form-control"><option value="">-- Nenhum --</option><option value="Norte">Norte</option>
+                    <option value="Centro Oeste">Centro Oeste</option>
+                    <option value="Sudeste">Sudeste</option>
+                    </select><br>
+                    
+                    <label for="company" class="labell">Empresa</label><input  id="company" maxlength="40" name="company" size="20" type="text" class="form-control" /><br>
+                    
+                    <label for="00N8a000007HB0A" class="labell">CNPJ:</label><input  id="00N8a000007HB0A" maxlength="14" name="00N8a000007HB0A" size="20" type="text" class="form-control" /><br>
+                    
+                    <label for="lead_source" class="labell" style="display: none;">Origem do lead</label><select  id="lead_source" name="lead_source" style="display: none;">
+                    <option value="Web">Web</option>
+                    </select><br>
+                    
+                    <input type="submit" name="submit" class="btn-success">
+                    
+                    </form>
             </div>
+
         </section>
             
         <footer class="ConteinerFooter">

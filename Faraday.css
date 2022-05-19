@@ -4,15 +4,15 @@ header{
     position: fixed;
     width: 100%;
 }
-
+/*Define a fonte e o tamanho dela*/
 body{
-font-family: arial, helvetica, sans-serif;
+font-family: "Poppins", sans-serif;
 font-size: 12px;
 }
 /*Dando estilo para o Menu*/
 .menu{
 list-style:none;
-border:0px solid #c0c0c0;
+border-bottom:0px solid;
 margin-top: -20px;
 margin-left: 70%;
 float:left;
@@ -26,7 +26,7 @@ float:left;
     }
 
 .menu li a{color:rgb(255, 253, 253); text-decoration:none; padding:5px 30px; display:block;}
-
+/*Ao passar o mouse sobre o menu ele muda de cor*/
 .menu li a:hover{
 background:#333;
 color:#fff;
@@ -37,14 +37,15 @@ text-shadow:0px 0px 5px #fff;
 /*menu e logo*/
 .retangulo{
     background: #1A2A36;
-    border: 0px solid ;
+    border-top:none ;
+    border-bottom: 1px solid  #c0c0c0 ;
     margin-top: 00px;
     padding: 2%;
     display: block;
     
 }
 
-/**/
+/*Slide central com imagem chamativa*/
 .slidecentral{
     width: 100%;
     height: 600px;
@@ -52,45 +53,49 @@ text-shadow:0px 0px 5px #fff;
      background-size: cover;
      background-position-y: center;
 }
-
+/*Ajuste de cor e tamanho do conteiner sobre*/
 .conteinerSobre{
     background-color: #1A2A36;
     width: 100%;
     height: 550px;
 }
-
+/*Ajuste de posição dos cards*/
 .row {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+/*Estilo dos cards*/
 .card {
-    background-color: #ccc;
+    
+    background-color: rgb(255, 254, 254);
     border-radius: 5px;
     box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
     padding: 30px;
-    margin: 20px;
     width: 400px;
     transition: all 0.3s ease-out;
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
-
+/*Estilo dos cards ao passar o mouse*/
 .card:hover {
     transform: translateY(-5px);
     cursor: pointer;
   }
-   
+/*Estilo do paragrafo dos cards*/  
   .card p {
+    margin-top: 10px;
     color: #a3a5ae;
     font-size: 16px;
   }
-   
+  /*Posicao e tamanho das imagens*/  
   .image {
     float: right;
     max-width: 64px;
     max-height: 64px;
 }
-
+/*Estilo das bordas dos cards blie, green e red*/
 .blue {
     border-left: 3px solid #4895ff;
   }
@@ -104,15 +109,42 @@ text-shadow:0px 0px 5px #fff;
 }
 
 .conteinerProduto{
-    background-color: #72797e;
+    
     width: 100%;
-    height: 550px;
+    height: 900px;
+}
+/*.conteinerProduto h1{
+    color: #000;
+    font-size: 35px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    margin-top: 0%;
+}*/
+.imagesolar{
+    margin-top: 30px;
+    margin-left: 20px;
+    border-radius: 30px;
+    width: 45%;
 }
 
+.imageeolica{
+    float: right;
+    margin-top: 30px;
+    margin-right: 20px;
+    border-radius: 30px;
+    width: 45%;
+    height: 400px;
+    image-rendering: pixelated;
+}
 .conteinerContato{
-    background-color: #3396e1;
+    background-color: black;
     width: 100%;
-    height: 550px;
+    height: 700px;
+    
+}
+
+.contatopage{
+    margin-top: 5%;
 }
 
 .ConteinerFooter{
@@ -126,4 +158,68 @@ text-shadow:0px 0px 5px #fff;
 .footer{
     color: #fff;
     text-align: center;
+}
+
+.formulario{
+    float: right;
+    margin-top: 4%;
+    margin-right: 300px;
+    color: #fff;
+
+}
+
+.formulario h1{
+    
+    color: #fff;
+    font-size: 35px;
+    font-family: "Poppins", sans-serif;
+}
+.form-control {
+   
+    width: 150%;
+    padding: 0.4rem 0rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.labell{
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+}
+
+
+.btn-success {
+    
+    background-color: #198754;
+    border: 1px solid transparent;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 2.5;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    width: 30%; 
+    border-radius: 0.25rem;
+    
+}
+
+
+.btn-success:hover{
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 0.275rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    background-color: #3bb54a;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
