@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   
     <meta charset="UTF-8">
     <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="Faraday.css"> 
+    <link rel="stylesheet" type="text/css" href="Faraday.css">
+    <!--Colocando icone na aba do navegador-->
+    <link rel = "shortcut icon" type = "imagem/x-icon" href = "img/energia-renovavel.png"/> 
+    
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap"
       rel="stylesheet"
-    />
-    
-    
+    />  
     <title>Faraday</title>
+
 </head>
 <body>
+    
     <main>
+        <!--conteiner do header englobando logo e menu-->
         <header class="retangulo">
 
-            <div class="" id="titulo">
-                <!--<img src="#" class="circle" width="30%">-->
-                <br>
-            </div>
+             <img src="img/logoFaradayy.png" class="logotipo" > 
 
             <nav>
                 <ul class="menu">
@@ -33,52 +35,84 @@
             </nav>
 
         </header>
-    
-        <section id="home" class="slidecentral">
-            <div>
-                testo
+        <!--conteiner home com texto animado-->
+        <section class="slidecentral" id="home"> 
+            <div class="texto">
+                <br><br><br><br><br><br><br>
+                <h1 id="app"></h1>
+                <h1 id="appp" ></h1>
             </div>
+            
         </section>
-
+       
+        <!--chamando arquivo javascript-->
+        <script src="https://safi.me.uk/typewriterjs/js/typewriter.js"></script>
+        <script type="text/javascript" src="Faraday.js"></script>
+        
+        <!--conteiner sobre com missao visao e valores-->
         <section id="sobre" class="conteinerSobre">
             <div class="row">
                 <div class="card green">
                   <h2>Missão</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Inventore quod, et quae nemo neque id dolorem eligendi officia nam
-                     dolorum ducimus soluta omnis? Ex blanditiis possimus reiciendis laboriosam nam nemo.</p>
+                  <p>Proporcionar soluções sustentáveis de
+                    energias limpas e renováveis para
+                    empresas e indústrias que buscam
+                    reduzir o custo relacionado ao consumo
+                    de energia, trazendo também  benefícios 
+                    ao meio ambiente.</p>
                   <img class="image" src="img/missao.png" alt="missao" />
                 </div>
            
                 <div class="card blue">
                   <h2>Visão</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Inventore quod, et quae nemo neque id dolorem eligendi officia nam
-                     dolorum ducimus soluta omnis? Ex blanditiis possimus reiciendis laboriosam nam nemo.</p>
+                  <p>Ser referência em alternativas de energias
+                    e na implantação de estruturas para indústrias
+                    e empresas de pequeno a grande porte,
+                    visando sempre a redução do impacto no meio ambiente.
+                    Trazendo inovação e sustentabilidade. </p>
                   <img class="image" src="img/visao.png" alt="visao" />
                 </div>
            
                 <div class="card red">
                   <h2>Valores</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                      Inventore quod, et quae nemo neque id dolorem eligendi officia nam
-                       dolorum ducimus soluta omnis? Ex blanditiis possimus reiciendis laboriosam nam nemo.</p>
+                  <p>Integridade, Transparência, 
+                    Excelência, Inovação,
+                    Responsabilidade Socioambiental,
+                    Crescimento, avanço, desenvolvimento sustentavél.
+                    Paixão, Colaboração, Qualidade, Ética, respeito e honestidade</p>
                   <img class="image" src="img/valor.png" alt="valores" />
                 </div>
             </div>
         </section>
-
+        
+        <!--conteiner de produtos com as imagens e os textos-->
         <section id="produto" class="conteinerProduto">
-           <!--<h1>Nossos serviços</h1>--> 
-            <div class="painelsolar">
-                <img src="img/painel-sol.jpg" class="imagesolar">
+            <img src="img/painel-sol.jpg" class="imagesolar">
+            <div class="paragrafoSolar">
+                <h1>Energia solar</h1>
+                <br>
+                <p class="">Energia solar corresponde à energia proveniente da luz e do calor emitidos pelo Sol. 
+                    Essa fonte de energia pode ser aproveitada de forma fotovoltaica ou térmica, gerando energia elétrica e térmica, respectivamente. <br><br>
+                    Por ser considerada uma fonte de energia limpa, a energia solar é uma das fontes alternativas mais promissoras para obtenção energética.
+                    Sua captação pode ser feita por meio de diversas tecnologias, como painéis fotovoltaicos, usinas heliotérmicas e aquecedores solares.<br><br>
+                    Basicamente, ao ser captada, a luz solar é convertida em energia. Nos painéis fotovoltaicos e nas usinas heliotérmicas, a luz solar é convertida em energia elétrica e térmica.
+                    Já no aquecimento solar, a luz solar é convertida em energia térmica.</p>   
             </div>
-
-            <div class="">
-                <img src="img/eolica.jpg" class="imageeolica">
+            <img src="img/energiaSolare.jfif" class="imageeolica">
+            
+            <div class="paragrafoEolico"> 
+                <h1>Energia Eólica</h1>
+                <br>
+                <p> A energia eólica é aquela produzida pelos ventos, mediante o movimento de turbinas que transformam energia mecânica em energia elétrica.
+                    Esta forma de produção de energia surgiu pela necessidade de diversificar a matriz elétrica brasileira que, até então, concentrava-se nas usinas hidrelétricas.<br><br>
+                    No Brasil, a produção de energia eólica é um negócio que se destaca pela capacidade não poluente de gerar energia renovável.<br> <br>
+                    Na prática, o vento é captado por hélices que possuem um gerador interno e ímãs ligados às hélices e a base.
+                    Uma das vantagens da energia eólica é o fato de ser um processo sustentável, que não polui o meio ambiente. 
+                    Dessa forma, o setor Eólico vem crescendo progressivamente no Brasil e as empresas de energia eólica vão ganhando destaque e se fortalecendo no mercado.</p>
             </div>
         </section>
-
+        
+        <!--conteiner de contato com o formulario e imagem-->
         <section id="contato" class="conteinerContato">
             
             <img src="img/energia-eolica.jpeg" class="contatopage">
@@ -126,7 +160,7 @@
             </div>
 
         </section>
-            
+        <!--footer com os direitos copyright-->  
         <footer class="ConteinerFooter">
             <div class="footer">
                 <p>Copyright © 2022 Faraday Energia - Todos os direitos reservados</p>
