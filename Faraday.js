@@ -27,3 +27,4 @@ typewriter.pauseFor(2500)
     .typeString('Solar')
     .pauseFor(2500)
     .start();
+
