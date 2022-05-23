@@ -28,3 +28,17 @@ typewriter.pauseFor(2500)
     .pauseFor(2500)
     .start();
 
+// Para exibir o box flutuante
+var btAbrirModal = $("#btAbrirModal");
+var modal = $("#modal");
+var modalClose = $("#modal .modal-close");
+var modalBackground = $("#modal .modal-bg");
+//para abrir a box com o fadeIn
+btAbrirModal.click(function () {
+    modal.fadeIn(500);
+});
+//fechar
+modalClose.click(function () {
+    modal.fadeOut(500);
+});
+

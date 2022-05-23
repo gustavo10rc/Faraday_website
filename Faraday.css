@@ -24,7 +24,7 @@ float:left;
     position:relative;
     float:left;
     margin-top: -20px;
-    margin-left: -20px;
+    margin-left: -40px;
     font-size: 16px;
     }
 
@@ -184,7 +184,7 @@ text-align: justify;
 .formulario{
     float: right;
     margin-top: 6%;
-    margin-right: 300px;
+    margin-right: 200px;
     color: #fff;
 
 }
@@ -198,7 +198,7 @@ text-align: justify;
 /*editando tipo, tamaho e cor e borda do formulario*/
 .form-control {
    
-    width: 150%;
+    width: 100%;
     padding: 0.4rem 0rem;
     font-size: 1rem;
     font-weight: 400;
@@ -259,4 +259,45 @@ text-align: justify;
     color: #fff;
     text-align: center;
 }
-
+/*box flutuante*/
+/*Escondendo a div da box*/
+.hide {
+    display: none;
+}
+/*definindo o plano de fundo na cor gainsboro e opacidade de 0.7*/
+.modal-bg {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: gainsboro;
+    opacity: 0.7;
+}
+/*dando estilo de cor, borda e posição da box onde vai o formulario do sac*/
+.modal-content {
+    position: fixed;
+    margin: 0 auto;
+    width: 650px;
+    height: 500px;
+    top: 120px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: white;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 5px;
+    padding: 5px;
+}
+/*dando estilo de cor e posição do botao para fechar a box*/
+.modal-close {
+    font-size: 2rem;
+    line-height: 1;
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #AAAAAA;
+    font-family: 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
+}
