@@ -313,3 +313,12 @@ text-align: justify;
     font-family: 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
 }
 
+
+/*Slide central com imagem chamativa*/
+.slidecentralvoltar{
+    width: 100%;
+    height: 650px;
+     background: url('img/eolicaGIF.gif') no-repeat;
+     background-size: cover;
+     background-position-y: center;
+}

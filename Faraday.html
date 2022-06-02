@@ -133,7 +133,7 @@
                     
                     <label for="email" class="labell">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" class="form-control" /><br>
                     
-                    <label for="Tipo de Energia" class="labell">Tipo de Energia:</label><select  id="00N8a000007H4yK" name="00N8a000007H4yK" title="Tipo de Energia" class="form-control"><option value="">-- Nenhum --</option><option value="Eólica">Eólica</option>
+                    <label for="Tipo de Energia" class="labell">Tipo de Energia:</label><select  id="00N8a000007H4yK" name="00N8a000007H4yK" title="Tipo de Energia" class="form-control"><option value="">-- Nenhum --</option><option value="Eolica">Eólica</option>
                     <option value="Solar">Solar</option>
                     </select><br>
                     
@@ -145,9 +145,66 @@
                     </select><br>
                     </div>
                     <div class="form-right">
-                    <label for="state" class="labell">Estado/província</label><input  id="state" maxlength="20" name="state" size="20" type="text"  class="form-control"/><br>
- 
-                    <label for="city" class="labell">Cidade</label><input  id="city" maxlength="40" name="city" size="20" type="text" class="form-control" /><br>
+                    <label for="state" class="labell">Estado</label>
+                    <select  id="00N8a000007H5kt" name="00N8a000007H5kt" title="Estado" class="form-control"><option value="">-- Nenhum --</option><option value="Acre (AC)">Acre (AC)</option>
+                    <option value="Amapá (AP)">Amapá (AP)</option>
+                    <option value="Amazonas (AM)">Amazonas (AM)</option>
+                    <option value="Pará (PA)">Pará (PA)</option>
+                    <option value="Rondônia (RO)">Rondônia (RO)</option>
+                    <option value="Roraima (RR)">Roraima (RR)</option>
+                    <option value="Tocantins (TO)">Tocantins (TO)</option>
+                    <option value="Distrito Federal (DF)">Distrito Federal (DF)</option>
+                    <option value="Goiás (GO)">Goiás (GO)</option>
+                    <option value="Mato Grosso (MT)">Mato Grosso (MT)</option>
+                    <option value="Espírito Santo (ES)">Espírito Santo (ES)</option>
+                    <option value="Minas Gerais (MG)">Minas Gerais (MG)</option>
+                    <option value="Rio de Janeiro (RJ)">Rio de Janeiro (RJ)</option>
+                    <option value="São Paulo (SP)">São Paulo (SP)</option>
+                    <option value="Mato Grosso do Sul (MS)">Mato Grosso do Sul (MS)</option>
+                    <option value="Alagoas">Alagoas</option>
+                    <option value="Bahia">Bahia</option>
+                    <option value="Ceará">Ceará</option>
+                    <option value="Maranhão">Maranhão</option>
+                    <option value="Piauí">Piauí</option>
+                    <option value="Pernambuco">Pernambuco</option>
+                    <option value="Paraíba">Paraíba</option>
+                    <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                    <option value="Sergipe">Sergipe</option>
+                    <option value="Paraná">Paraná</option>
+                    <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                    <option value="Santa Catarina">Santa Catarina</option>
+                    </select><br>
+
+                    <label for="city" class="labell">Cidade</label>
+
+                    <select  id="00N8a000007H5l8" name="00N8a000007H5l8" title="Cidade" class="form-control" ><option value="">-- Nenhum --</option><option value="Rio Branco">Rio Branco</option>
+                    <option value="Macapá">Macapá</option>
+                    <option value="Manaus">Manaus</option>
+                    <option value="Belém">Belém</option>
+                    <option value="Porto Velho">Porto Velho</option>
+                    <option value="Boa Vista">Boa Vista</option>
+                    <option value="Palmas">Palmas</option>
+                    <option value="Brasília">Brasília</option>
+                    <option value="Goiânia">Goiânia</option>
+                    <option value="Cuiabá">Cuiabá</option>
+                    <option value="Campo Grande">Campo Grande</option>
+                    <option value="Vitória">Vitória</option>
+                    <option value="Belo Horizonte">Belo Horizonte</option>
+                    <option value="Rio de Janeiro">Rio de Janeiro</option>
+                    <option value="São Paulo">São Paulo</option>
+                    <option value="São Luís">São Luís</option>
+                    <option value="Teresina">Teresina</option>
+                    <option value="Natal">Natal</option>
+                    <option value="Fortaleza">Fortaleza</option>
+                    <option value="João Pessoa">João Pessoa</option>
+                    <option value="Salvador">Salvador</option>
+                    <option value="Recife">Recife</option>
+                    <option value="Maceió">Maceió</option>
+                    <option value="Aracaju">Aracaju</option>
+                    <option value="Florianópolis">Florianópolis</option>
+                    <option value="Curitiba">Curitiba</option>
+                    <option value="Porto Alegre">Porto Alegre</option>
+                    </select><br>
 
                     <label for="company" class="labell">Empresa</label><input  id="company" maxlength="40" name="company" size="20" type="text" class="form-control" /><br>
                     
@@ -187,6 +244,9 @@
                     <label  class="labell" for="subject">Assunto</label><input class="form-control" id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
                     
                     <label class="labell" for="description">Descrição</label><textarea name="description" class="form-control"></textarea><br>
+                    
+                    <label for="Origin" class="labell" style="display: none;">Origem do caso</label><select  id="Origin" name="Origin" style="display: none;">
+                    <option value="Web">Web</option>
                     
                     <input class="btn-success" type="submit" name="submit">
                     
